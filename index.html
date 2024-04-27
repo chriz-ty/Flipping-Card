@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipping Card</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="signup-container container-fluid vh-100 w-100  d-flex align-items-center justify-content-center">
+    <div class="container-fluid mt-3 vh-100 d-flex align-items-center justify-content-center w-100 ">
+      <div class="row">
+        <div class="col-lg-6 col-12 info-col vh-50 p-0  d-flex align-items-center justify-content-center" style="border-top-left-radius: 50px; border-bottom-left-radius: 50px;">
+          <div class="card block1 bg-primary" style="height: 602px; width: 505px; border-top-left-radius: 50px; border-bottom-left-radius: 50px;">
+            <div class="card-body m-5">
+              <h4 class="card-title d-flex justify-content-center">Get access to everything PrecisionCare</h4>
+              <br>
+              <div class="row">
+                <div class="col-1 ml-4" id="signupInfo">
+                  <div class="round1 rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="./images/auth-icon-1.20841929.svg.png">
+                  </div>
+                </div>
+                <div class="col-9 ml-4 d-flex align-items-center">
+                  <p>Personalized tools for managing your health</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-1 ml-4">
+                  <div class="round1 rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="./images/auth-icon-2.e105126d.svg fill.png">
+                  </div>
+                </div>
+                <div class="col-9 ml-4 d-flex align-items-center">
+                  <p>Predicts Your Disease</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-1 ml-4">
+                  <div class="round1 rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="./images/auth-icon-3.ced0b2ae.svg fill.png">
+                  </div>
+                </div>
+                <div class="col-9 ml-4 d-flex align-items-center">
+                  <p>Disease Description</p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-1 ml-4">
+                  <div class="round1 rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="./images/auth-icon-4.bd66851b.svg.png">
+                  </div>
+                </div>
+                <div class="col-9 ml-4 d-flex align-items-center">
+                  <p>Recommends Workout, Diets, Precautions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-12 form-col vh-50 p-0  d-flex align-items-center justify-content-center">
+          <div class="card-container">
+            <div class="card block1" style="height: 602px; width: 505px; border-radius: 50px;">
+              <div class="card-face card-front bg-secondary" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;" >
+                <div class="container vh-50">
+                  <h4 class="d-flex justify-content-center mt-5">Sign Up</h4>
+                  <br>
+                  <form  id="signup-form">
+                    <div class="container d-flex  align-items-center justify-content-center">
+                      <input type="email" id="signup-email" placeholder="  Email" class="w-75 shadow" style="border-radius: 5px; height: 40px; border-style: none;" required>
+                    </div>
+                    <div class="container mt-3 d-flex align-items-center justify-content-center">
+                        <input type="password" id="signup-password" placeholder="  Password" class="w-75 shadow" style="border-radius: 5px; height: 40px; border-style: none;" required>
+                    </div>
+                    <div class="container mt-3 d-flex  align-items-center justify-content-center">
+                        <input type="text" id="signup-phone" placeholder="  Phone Number" class="w-75 shadow" style="border-radius: 5px; height: 40px; border-style: none;" required>
+                    </div>
+                    <div class="container mt-3 d-flex  align-items-center justify-content-center">
+                        <button type="submit" style="border-radius: 5px; height: 40px; border-style: none;" class="w-50 h-10 shadow ">Submit</button>
+                    </div>
+                  </form>
+                  <div class="container mt-3 d-flex  align-items-center justify-content-center">
+                      <p>By signing up, I agree to PrecisionCare <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>. </p>
+                  </div>
+                  <div class="container mt-3 d-flex  align-items-center justify-content-center">
+                      <p>Already have an account? <a href="#" id="login-btn" class="flip-btn">Log In</a>.</p>
+                  </div>
+                </div>  
+              </div>
+              <div class="card-face card-back" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;">
+                <div class="container vh-50 ">
+                  <h4 class="d-flex justify-content-center mt-5">LogIn</h4>
+                  <br>
+                  <form id="login-form">
+                    <div class="container d-flex  align-items-center justify-content-center">
+                      <input type="email" placeholder="  Email" id="login-email" class="w-75 shadow" style="border-radius: 5px; height: 40px; border-style: none;" required>
+                    </div>
+                    <div class="container mt-3 d-flex align-items-center justify-content-center">
+                        <input type="password" placeholder="  Password" id="login-password" class="w-75 shadow" style="border-radius: 5px; height: 40px; border-style: none;" required>
+                    </div>
+                    <div class="container mt-3 d-flex  align-items-center justify-content-center">
+                        <button type="submit" style="border-radius: 5px; height: 40px; border-style: none;" class="w-50 h-10 shadow ">Submit</button>
+                    </div>
+                  </form>
+                  <div class="container mt-3 d-flex  align-items-center justify-content-center">
+                      <p>By signing up, I agree to PrecisionCare <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>. </p>
+                  </div>
+                  <div class="container mt-3 d-flex  align-items-center justify-content-center">
+                      <p>Don't have an account ? <a href="#" id="signup-btn" class="flip-btn"> Sign Up</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+
+</body>
+</html>
