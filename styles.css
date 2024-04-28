@@ -62,7 +62,7 @@ button:hover{
 
 
 .signup-container{
-    background-image: url("../images/AdobeStock_274526971.jpeg");
+    background-image: url("./images/AdobeStock_274526971.jpeg");
     background-size: cover;
 
 }
@@ -77,7 +77,7 @@ button:hover{
         padding-left: 10px;
     }
     .signup-container{
-        background-image: url("../images/AdobeStock_274526971.jpeg");
+        background-image: url("./images/AdobeStock_274526971.jpeg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -110,7 +110,7 @@ button:hover{
         border-radius: 70px 70px 70px 70px; /* Remove border radius */
     }
     .signup-container{
-        background-image: url("../images/AdobeStock_274526971.jpeg");
+        background-image: url("./images/AdobeStock_274526971.jpeg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
